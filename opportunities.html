@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Opportunities - Kay Manpower Naija</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-globe me-2"></i>Kay Manpower Naija
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#opportunities">Opportunities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero-section text-white text-center py-5" style="min-height: 300px;">
+        <div class="container py-5">
+            <h1 class="display-4 fw-bold mb-4">All Opportunities</h1>
+            <p class="lead">Explore jobs, education programs, and overseas opportunities</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row g-3 align-items-end">
+                <div class="col-md-3">
+                    <label class="form-label fw-bold">Filter by Type</label>
+                    <select class="form-select" id="filterType">
+                        <option value="">All Types</option>
+                        <option value="job">Jobs</option>
+                        <option value="education">Education</option>
+                        <option value="internship">Internship</option>
+                        <option value="scholarship">Scholarship</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label fw-bold">Filter by Country</label>
+                    <select class="form-select" id="filterCountry">
+                        <option value="">All Countries</option>
+                        <option value="Germany">Germany</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="Netherlands">Netherlands</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Australia">Australia</option>
+                        <option value="USA">USA</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label fw-bold">Search</label>
+                    <input type="text" class="form-control" id="searchInput" placeholder="Search opportunities...">
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-primary w-100" onclick="resetFilters()">Reset Filters</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opportunities Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div id="opportunitiesContainer" class="row g-4">
+                <!-- Job Opportunities -->
+                <div class="col-md-6 opportunity-item" data-type="job" data-country="Germany">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-danger mb-2">Job Opening</span>
+                            <h5 class="card-title">Senior Software Engineer</h5>
+                            <p class="text-muted mb-2"><i class="fas fa-map-marker-alt me-2"></i>Berlin, Germany</p>
+                            <p class="text-muted mb-3"><i class="fas fa-briefcase me-2"></i>Tech Company</p>
+                            <p class="card-text">Seeking experienced software engineer with 5+ years experience in Python and cloud technologies. Competitive salary and relocation support.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-light text-dark me-2">Python</span>
+                                <span class="badge bg-light text-dark me-2">AWS</span>
+                                <span class="badge bg-light text-dark">Docker</span>
+                            </div>
+                            <p class="mb-2"><strong>Salary:</strong> €60,000 - €80,000/year</p>
+                            <p class="text-muted mb-3"><small>Posted 2 days ago</small></p>
+                            <a href="#" class="btn btn-danger btn-sm">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 opportunity-item" data-type="job" data-country="UK">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-danger mb-2">Job Opening</span>
+                            <h5 class="card-title">Project Manager</h5>
+                            <p class="text-muted mb-2"><i class="fas fa-map-marker-alt me-2"></i>London, United Kingdom</p>
+                            <p class="text-muted mb-3"><i class="fas fa-briefcase me-2"></i>Consulting Firm</p>
+                            <p class="card-text">Experienced project manager for agile-driven environment. Lead teams of 10+ professionals. Excellent benefits and career growth.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-light text-dark me-2">Agile</span>
+                                <span class="badge bg-light text-dark me-2">Leadership</span>
+                                <span class="badge bg-light text-dark">PRINCE2</span>
+                            </div>
+                            <p class="mb-2"><strong>Salary:</strong> £55,000 - £70,000/year</p>
+                            <p class="text-muted mb-3"><small>Posted 5 days ago</small></p>
+                            <a href="#" class="btn btn-danger btn-sm">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 opportunity-item" data-type="job" data-country="Netherlands">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-danger mb-2">Job Opening</span>
+                            <h5 class="card-title">Data Analyst</h5>
+                            <p class="text-muted mb-2"><i class="fas fa-map-marker-alt me-2"></i>Amsterdam, Netherlands</p>
+                            <p class="text-muted mb-3"><i class="fas fa-briefcase me-2"></i>Financial Services</p>
+                            <p class="card-text">Support business intelligence initiatives. Work with large datasets and BI tools. Relocation support and competitive package.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-light text-dark me-2">SQL</span>
+                                <span class="badge bg-light text-dark me-2">Tableau</span>
+                                <span class="badge bg-light text-dark">Excel</span>
+                            </div>
+                            <p class="mb-2"><strong>Salary:</strong> €50,000 - €65,000/year</p>
+                            <p class="text-muted mb-3"><small>Posted 1 week ago</small></p>
+                            <a href="#" class="btn btn-danger btn-sm">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 opportunity-item" data-type="job" data-country="Germany">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-danger mb-2">Job Opening</span>
+                            <h5 class="card-title">Marketing Manager</h5>
+                            <p class="text-muted mb-2"><i class="fas fa-map-marker-alt me-2"></i>Munich, Germany</p>
+                            <p class="text-muted mb-3"><i class="fas fa-briefcase me-2"></i>E-commerce Company</p>
+                            <p class="card-text">Develop marketing strategies for European expansion. Strong digital marketing background required. International team environment.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-light text-dark me-2">Digital Marketing</span>
+                                <span class="badge bg-light text-dark me-2">SEO/SEM</span>
+                                <span class="badge bg-light text-dark">Analytics</span>
+                            </div>
+                            <p class="mb-2"><strong>Salary:</strong> €45,000 - €60,000/year</p>
+                            <p class="text-muted mb-3"><small>Posted 3 days ago</small></p>
+                            <a href="#" class="btn btn-danger btn-sm">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Opportunities -->
+                <div class="col-md-6 opportunity-item" data-type="education" data-country="Canada">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Study Program</span>
+                            <h5 class="card-title">Bachelor's in Business Administration</h5>
+                            <p class="text-muted mb-2"><i class="fas fa-graduation-cap me-2"></i>University of Toronto</p>
+                            <p class="text-muted mb-3"><i class="fas fa-map-marker-alt me-2"></i>Toronto, Canada</p>
+                            <p class="card-text">4-year program with co-op opportunities. Develop business skills and global perspective. Strong alumni network.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-light text-dark me-2">Business</span>
+                                <span class="badge bg-light text-dark me-2">4 Years</span>
+                                <span class="badge bg-light text-dark">Co-op</span>
+                            </div>
+                            <p class="mb-2"><strong>Tuition:</strong> CAD $20,000 - $25,000/year</p>
+                            <p class="text-muted mb-3"><small>Intake: September 2026</small></p>
+                            <a href="#" class="btn btn-success btn-sm">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 opportunity-item" data-type="education" data-country="Germany">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Study Program</span>
+                            <h5 class="card-title">Master's in Data Science</h5>
+                            <p class="text-muted mb-2"><i class="fas fa-graduation-cap me-2"></i>Technical University of Munich</p>
+                            <p class="text-muted mb-3"><i class="fas fa-map-marker-alt me-2"></i>Munich, Germany</p>
+                            <p class="card-text">2-year advanced program combining theory and practical applications. Research-focused curriculum with industry connections.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-light text-dark me-2">Tech</span>
+                                <span class="badge bg-light text-dark me-2">2 Years</span>
+                                <span class="badge bg-light text-dark">English</span>
+                            </div>
+                            <p class="mb-2"><strong>Tuition:</strong> €6,000 - €8,000/year</p>
+                            <p class="text-muted mb-3"><small>Deadline: 30 June 2026</small></p>
+                            <a href="#" class="btn btn-success btn-sm">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 opportunity-item" data-type="education" data-country="Australia">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Study Program</span>
+                            <h5 class="card-title">Bachelor's in Engineering</h5>
+                            <p class="text-muted mb-2"><i class="fas fa-graduation-cap me-2"></i>University of Melbourne</p>
+                            <p class="text-muted mb-3"><i class="fas fa-map-marker-alt me-2"></i>Melbourne, Australia</p>
+                            <p class="card-text">Comprehensive engineering program with specializations. World-class facilities and experienced faculty. Internship opportunities.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-light text-dark me-2">Engineering</span>
+                                <span class="badge bg-light text-dark me-2">4 Years</span>
+                                <span class="badge bg-light text-dark">Internship</span>
+                            </div>
+                            <p class="mb-2"><strong>Tuition:</strong> AUD $30,000 - $35,000/year</p>
+                            <p class="text-muted mb-3"><small>Intake: February 2027</small></p>
+                            <a href="#" class="btn btn-success btn-sm">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 opportunity-item" data-type="scholarship" data-country="UK">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Scholarship</span>
+                            <h5 class="card-title">MBA Programme - Full Scholarship</h5>
+                            <p class="text-muted mb-2"><i class="fas fa-graduation-cap me-2"></i>University of Cambridge</p>
+                            <p class="text-muted mb-3"><i class="fas fa-map-marker-alt me-2"></i>Cambridge, UK</p>
+                            <p class="card-text">Full scholarship including tuition and living expenses. Prestigious MBA program designed for business professionals.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-light text-dark me-2">Business</span>
+                                <span class="badge bg-light text-dark me-2">1 Year</span>
+                                <span class="badge bg-light text-dark">Full Scholarship</span>
+                            </div>
+                            <p class="mb-2"><strong>Coverage:</strong> 100% tuition + living allowance</p>
+                            <p class="text-muted mb-3"><small>Deadline: 30 June 2026</small></p>
+                            <a href="#" class="btn btn-warning btn-sm">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Internship Opportunities -->
+                <div class="col-md-6 opportunity-item" data-type="internship" data-country="Netherlands">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-info mb-2">Internship</span>
+                            <h5 class="card-title">Marketing Intern</h5>
+                            <p class="text-muted mb-2"><i class="fas fa-briefcase me-2"></i>Digital Marketing Agency</p>
+                            <p class="text-muted mb-3"><i class="fas fa-map-marker-alt me-2"></i>Amsterdam, Netherlands</p>
+                            <p class="card-text">6-month internship programme in digital marketing. Gain international experience with leading European firm. Visa support provided.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-light text-dark me-2">Marketing</span>
+                                <span class="badge bg-light text-dark me-2">6 Months</span>
+                                <span class="badge bg-light text-dark">Paid</span>
+                            </div>
+                            <p class="mb-2"><strong>Stipend:</strong> €800 - €1,000/month</p>
+                            <p class="text-muted mb-3"><small>Posted 1 week ago</small></p>
+                            <a href="#" class="btn btn-info btn-sm">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 opportunity-item" data-type="internship" data-country="USA">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-info mb-2">Internship</span>
+                            <h5 class="card-title">Software Development Intern</h5>
+                            <p class="text-muted mb-2"><i class="fas fa-briefcase me-2"></i>Tech Startup</p>
+                            <p class="text-muted mb-3"><i class="fas fa-map-marker-alt me-2"></i>San Francisco, USA</p>
+                            <p class="card-text">3-month internship in a dynamic tech environment. Work with modern technologies and experienced mentors. J-1 visa sponsorship.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-light text-dark me-2">Tech</span>
+                                <span class="badge bg-light text-dark me-2">3 Months</span>
+                                <span class="badge bg-light text-dark">Paid</span>
+                            </div>
+                            <p class="mb-2"><strong>Stipend:</strong> $15/hour</p>
+                            <p class="text-muted mb-3"><small>Posted 3 days ago</small></p>
+                            <a href="#" class="btn btn-info btn-sm">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- No Results Message -->
+            <div id="noResults" class="text-center py-5" style="display: none;">
+                <i class="fas fa-search fa-3x text-muted mb-3"></i>
+                <h4 class="text-muted">No opportunities found</h4>
+                <p class="text-muted">Try adjusting your filters or search terms</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Didn't find what you're looking for?</h2>
+            <p class="lead mb-5">Contact us and we'll help you find the perfect opportunity</p>
+            <a href="index.html#contact" class="btn btn-primary btn-lg px-5">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <h5>Kay Manpower Naija</h5>
+                    <p>Your trusted partner for global success in education, recruitment, and travel.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="recruitment.html" class="text-decoration-none text-light">Recruitment</a></li>
+                        <li><a href="education.html" class="text-decoration-none text-light">Education</a></li>
+                        <li><a href="travel.html" class="text-decoration-none text-light">Travel & Visas</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-decoration-none text-light">Home</a></li>
+                        <li><a href="index.html#about" class="text-decoration-none text-light">About</a></li>
+                        <li><a href="index.html#contact" class="text-decoration-none text-light">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p>&copy; 2026 Kay Manpower Naija. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Filter functionality
+        const filterType = document.getElementById('filterType');
+        const filterCountry = document.getElementById('filterCountry');
+        const searchInput = document.getElementById('searchInput');
+        const opportunitiesContainer = document.getElementById('opportunitiesContainer');
+        const noResults = document.getElementById('noResults');
+        const items = document.querySelectorAll('.opportunity-item');
+
+        function filterOpportunities() {
+            const typeValue = filterType.value.toLowerCase();
+            const countryValue = filterCountry.value.toLowerCase();
+            const searchValue = searchInput.value.toLowerCase();
+            let visibleCount = 0;
+
+            items.forEach(item => {
+                const itemType = item.dataset.type.toLowerCase();
+                const itemCountry = item.dataset.country.toLowerCase();
+                const itemText = item.innerText.toLowerCase();
+
+                const typeMatch = !typeValue || itemType === typeValue;
+                const countryMatch = !countryValue || itemCountry === countryValue;
+                const searchMatch = !searchValue || itemText.includes(searchValue);
+
+                if (typeMatch && countryMatch && searchMatch) {
+                    item.style.display = '';
+                    visibleCount++;
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+        }
+
+        function resetFilters() {
+            filterType.value = '';
+            filterCountry.value = '';
+            searchInput.value = '';
+            filterOpportunities();
+        }
+
+        filterType.addEventListener('change', filterOpportunities);
+        filterCountry.addEventListener('change', filterOpportunities);
+        searchInput.addEventListener('input', filterOpportunities);
+    </script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
