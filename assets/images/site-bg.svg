@@ -1,0 +1,31 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d6efd"/>
+      <stop offset="100%" stop-color="#0a58ca"/>
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bgGradient)"/>
+  <circle cx="280" cy="240" r="160" fill="rgba(255, 255, 255, 0.12)"/>
+  <circle cx="1640" cy="220" r="220" fill="rgba(255, 255, 255, 0.08)"/>
+  <circle cx="1320" cy="760" r="260" fill="rgba(255, 255, 255, 0.1)"/>
+  <path d="M260 680C420 620 560 560 720 590C880 620 1040 700 1240 680C1460 660 1560 520 1630 440" stroke="rgba(255,255,255,0.22)" stroke-width="16" stroke-linecap="round"/>
+  <path d="M360 520C500 480 640 460 780 500C920 540 1020 650 1180 630C1340 610 1460 520 1620 470" stroke="rgba(255,255,255,0.18)" stroke-width="12" stroke-linecap="round"/>
+  <rect x="480" y="220" width="360" height="180" rx="28" fill="rgba(255,255,255,0.18)"/>
+  <rect x="560" y="260" width="180" height="20" rx="10" fill="white" opacity="0.75"/>
+  <rect x="560" y="310" width="260" height="16" rx="8" fill="white" opacity="0.55"/>
+  <rect x="560" y="360" width="200" height="16" rx="8" fill="white" opacity="0.45"/>
+  <path d="M1140 380C1250 340 1370 320 1500 360C1500 420 1510 520 1460 580C1410 640 1320 680 1220 680C1120 680 1040 640 980 600C920 560 880 490 820 470C760 450 700 460 670 500" stroke="rgba(255,255,255,0.2)" stroke-width="14" stroke-linecap="round" fill="none"/>
+  <path d="M1070 180L1150 260" stroke="white" stroke-width="14" stroke-linecap="round"/>
+  <path d="M1180 180L1100 260" stroke="white" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="1380" cy="820" r="85" fill="rgba(255,255,255,0.14)"/>
+  <path d="M1300 760H1460" stroke="white" stroke-width="10" stroke-linecap="round" opacity="0.6"/>
+  <path d="M1300 800H1420" stroke="white" stroke-width="10" stroke-linecap="round" opacity="0.6"/>
+  <path d="M1300 840H1380" stroke="white" stroke-width="10" stroke-linecap="round" opacity="0.6"/>
+  <ellipse cx="395" cy="780" rx="280" ry="120" fill="url(#accentGradient)"/>
+  <path d="M1200 880C1280 820 1380 780 1500 780" stroke="rgba(255,255,255,0.16)" stroke-width="12" stroke-linecap="round"/>
+</svg>
