@@ -25,7 +25,7 @@ body {
     color: var(--dark-text);
     line-height: 1.6;
     background: linear-gradient(180deg, rgba(13, 110, 253, 0.18), rgba(10, 88, 202, 0.28)),
-        url('../images/site-bg.svg') center/cover fixed no-repeat;
+        url('../images/assets/images/Kay logo.jpeg') center/cover fixed no-repeat;
     background-color: #f8f9fa;
     background-attachment: fixed;
 }
