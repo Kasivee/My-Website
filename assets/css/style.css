@@ -24,10 +24,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--dark-text);
     line-height: 1.6;
-    background: linear-gradient(180deg, rgba(13, 110, 253, 0.18), rgba(10, 88, 202, 0.28)),
-        url('../images/assets/images/Kay logo.jpeg') center/cover fixed no-repeat;
+    background: linear-gradient(180deg, rgba(13, 110, 253, 0.18), rgba(10, 88, 202, 0.28));
     background-color: #f8f9fa;
-    background-attachment: fixed;
 }
 
 .bg-light {
@@ -57,17 +55,7 @@ body {
 
 /* Decorative hero image placed on the right side */
 .hero-section::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    width: 50%;
-    height: 100%;
-    background: url('../images/hero-bg.svg') right center/contain no-repeat;
-    opacity: 1;
-    pointer-events: none;
-    z-index: 0;
+    display: none;
 }
 
 .hero-section .container {
